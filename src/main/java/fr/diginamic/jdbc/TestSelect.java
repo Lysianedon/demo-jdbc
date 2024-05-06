@@ -43,7 +43,8 @@ public class TestSelect {
 				Fournisseur supplier = new Fournisseur(id, nom);
 				suppliersList.add(supplier);
 			}
-			System.out.println(suppliersList);
+
+			suppliersList.forEach(System.out::println);
 		} catch (SQLException e) {
 			System.err.println(e.getMessage());
 		} 
